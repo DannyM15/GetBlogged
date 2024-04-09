@@ -19,7 +19,7 @@ Post.init(
         type: DataTypes.TEXT,
         },
         user_id: {
-            type: DataTypes.INTEGERN,
+            type: DataTypes.INTEGER,
             references: {
                 model: 'User',
                 key: 'id',
@@ -36,4 +36,4 @@ Post.init(
 )
 
 
-Model.exports = Post
+module.exports = Post
